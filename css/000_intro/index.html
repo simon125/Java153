@@ -1,0 +1,77 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 3 sposób na dołączanie styl - zewnętrzny plik -->
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"
+    />
+    <!-- 1 sposób na dołączanie styli -->
+    <!-- <style>
+      body {
+        background-color: aqua;
+      }
+      input {
+        background-color: darkorchid;
+      }
+
+      button {
+        background-color: coral;
+      }
+    </style> -->
+    <!-- 
+  1) sposoby na stylowanie dokumentu HTML:
+  - tagi style
+  - inline styling
+  - zewnętrzny plik
+  - zewnętrzna biblioteka ??? https://picocss.com/docs/
+ -->
+  </head>
+  <!-- 2) sposób na pisanie styli -->
+  <!-- <body style="background-color: bisque; margin-top: 10px"> -->
+  <body>
+    <h1>Jak style połączyć z HTMLem?</h1>
+
+    <form action="" class="container">
+      <div>
+        <label>
+          Jak masz na imie?
+          <input
+            type="text"
+            placeholder="Imie (max 20 znaków)"
+            maxlength="20"
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Jak masz na nazwisko?
+          <input
+            type="text"
+            placeholder="Nazwisko (max 20 znaków)"
+            maxlength="20"
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Podaj hasło
+          <input type="password" placeholder="Hasło" />
+        </label>
+      </div>
+      <div>
+        <label>
+          Powtórz hasło
+          <input type="password" placeholder="Powtórz hasło" />
+        </label>
+      </div>
+      <button style="background-color: blue" type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
