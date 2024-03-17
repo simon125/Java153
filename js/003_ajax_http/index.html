@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+    <style></style>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="container">
+      <article>
+        <form id="createUserForm">
+          <label for="name">
+            Name
+            <input type="text" id="name" name="name" placeholder="Name" />
+          </label>
+          <label for="lastname">
+            Last name
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Last name"
+            />
+          </label>
+          <label for="email">
+            Email
+            <input type="text" id="email" name="email" placeholder="Email" />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </article>
+
+      <article>
+        <button id="fetchButton">Pobierz listę userów</button>
+      </article>
+      <article>
+        <table>
+          <tbody id="todos"></tbody>
+        </table>
+      </article>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
