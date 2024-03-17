@@ -10,6 +10,20 @@
 // formą sprawdzenia co jest dostępne w obiekcie document jest sprawdzenie go w konsoli deweloperskiej w przeglądarce
 
 /**
+ * pobranie danych z bacnaku
+ */
+
+const todos = ["pouczyc się JSa", "pouczyć się CSSa", "poczuyć sie Javy"];
+
+const ul = document.createElement("ul");
+
+todos.forEach((todo) => {
+  ul.innerHTML = ul.innerHTML + `<li>${todo}</li>`;
+});
+
+document.querySelector("#todoList").appendChild(ul);
+
+/**
  * Tworzenie elementu
  *
  * 1) createElement
@@ -42,7 +56,7 @@
  *
  */
 
-document.body.appendChild(divElement);
+// document.body.appendChild(divElement);
 
 /**
  * Usuwanie elementu - metoda remove dostępna na elemencie HTML/Nodzie
@@ -53,3 +67,15 @@ document.body.appendChild(divElement);
 /**
  * Eventy, event listnery - interakcja z UI
  */
+
+document
+  .querySelector("#usersStaticTable")
+  .addEventListener("click", (event) => {
+    console.log("CLICK");
+    console.log(event);
+
+    if (event.target.classList.contains("deleteButton")) {
+      console.log("kliknałeś w przycisk do usuwania");
+      event.target.parentNode.parentNode.remove();
+    }
+  });

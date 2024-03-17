@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(195, 202, 202);
+}
+
+.main-heading {
+  text-align: center;
+  font-weight: 200;
+}
+
+.typography {
+  color: red;
+  font-weight: bold;
+}
+
+ul {
+  margin: 100px;
+}
+
+li:nth-of-type(2n) {
+  background-color: antiquewhite;
+}
+
+li:nth-of-type(2n - 1) {
+  background-color: blueviolet;
+}
